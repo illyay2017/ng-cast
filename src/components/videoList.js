@@ -8,9 +8,8 @@ angular.module('video-player')
     //   console.log(this.videos);
     // },
     
-    controller: function() {
-      this.videos = exampleVideoData;
-      this.title = this.videos[3];
+    controller: function() { 
+      // this.title = this.videos[3];
       // console.log(this.videos);
     },
     templateUrl: '/src/templates/videoList.html'
