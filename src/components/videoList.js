@@ -10,6 +10,7 @@ angular.module('video-player')
     
     controller: function() {
       this.videos = exampleVideoData;
+      this.title = this.videos[3];
       // console.log(this.videos);
     },
     templateUrl: '/src/templates/videoList.html'
