@@ -3,16 +3,19 @@ angular.module('video-player')
 
   .component('app', {
     // bindings: {  
-    // videos: '<'
+    //   videoplayer: '<',
     // },
+    
     controller: function () {
       this.videos = exampleVideoData;
       this.videoplayer = exampleVideoData[0];
+      
+      // console.log('this is the app controller: ', this);
 
-      this.swapVideo = function() {
-        console.log(this.videoplayer);
-        console.log('hello!!!!');
-        // this.videoplayer = '???';
+      // this.videoplayer = exampleVideoData[0];
+      // console.log('outside swapVideo:', this.videoplayer);
+      this.swapVideo = (video) => {
+        this.videoplayer = video;
       };
     //   this.videos = exampleVideoData;
     //   // console.log(this.videos);

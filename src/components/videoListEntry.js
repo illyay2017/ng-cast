@@ -2,9 +2,10 @@ angular.module('video-player')
   .component('videoListEntry', {
     bindings: {  
       video: '<',
-      swapThisVideo: '<'
+      swapThisVideo: '<',
+      index: '<'
     }, 
-    controller: function($scope) {
+    controller: function() {
       // var that = console.dir(this);
 
       // this.handleClick = () => {
