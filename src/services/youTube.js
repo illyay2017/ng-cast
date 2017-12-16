@@ -6,7 +6,7 @@ angular.module('video-player')
       method: 'GET',
       params: {
         part: 'snippet',
-        query: 'cats', 
+        q: 'cats', 
         maxResults: '5', 
         key: 'AIzaSyCxc4aWHPvHrM5Pvpk6-yLs41GZMW3pI18'},
       url: 'https://www.googleapis.com/youtube/v3/search'
