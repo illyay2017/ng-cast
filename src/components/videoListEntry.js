@@ -1,9 +1,18 @@
 angular.module('video-player')
   .component('videoListEntry', {
     bindings: {  
-      video: '<'
+      video: '<',
+      swapThisVideo: '<'
     }, 
-    controller: function() {
+    controller: function($scope) {
+      // var that = console.dir(this);
+
+      // this.handleClick = () => {
+      // console.log('hello');
+      // console.log('this is the $scope: ', $scope);
+      // console.log('this is the title: ' + that);
+      // };
+      
       // console.log(this.video);
       // this.video = video;
       // this.video;
