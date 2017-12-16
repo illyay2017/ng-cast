@@ -3,13 +3,12 @@ angular.module('video-player')
 
   .component('app', {
     // bindings: {  
-    //   videoplayer: '<',
     // },
     
-    controller: function () {
+    controller: function (youTube) {
       this.videos = exampleVideoData;
       this.videoplayer = exampleVideoData[0];
-      
+      this.searchterm = 'cats';
       // console.log('this is the app controller: ', this);
 
       // this.videoplayer = exampleVideoData[0];
